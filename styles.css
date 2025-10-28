@@ -1,0 +1,156 @@
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    background-color: #fce7f3;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'lato-regular', sans-serif;
+    line-height: 2;
+}
+
+.card {
+    max-width: 40rem;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+
+}
+
+.card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 35px 70px -15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+h1 {
+    color: #d6336c;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+
+}
+
+.header-section {
+    margin-bottom: 2rem;
+}
+
+.main-title {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #db2777;
+    margin-bottom: 1rem;
+}
+
+
+.subtitle {
+    font-size: 1.25rem;
+    color: #6b7280;
+    font-style: italic;
+}
+
+.message-box {
+    border: 2px solid #f9a8d4;
+    background-color: #fdf2f8;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.apology-text {
+    font-size: 1.5rem;
+    color: #9d174d;
+
+    line-height: 1.65;
+}
+
+.forgive-text {
+    font-size: 1.125rem;
+    color: #4b5563;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.reveal-btn {
+    background-color: #ec4899;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+
+}
+
+.heart-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.heart-icon {
+    width: 4rem;
+    height: 4rem;
+    color: #ef4444;
+    fill: currentColor;
+    animation: pulse-heart 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse-heart {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.reveal-btn {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background-color: #ec4899;
+    color: white;
+    font-weight: 700;
+    font-size: 1.125rem;
+    border-radius: 9999px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    outline: none;
+}
+
+.reveal-btn:hover {
+    background-color: #db2777;
+    transform: scale(1.05);
+}
+
+.reveal-btn:active {
+    background-color: #be185d;
+}
+
+.reveal-btn:focus {
+    box-shadow: 0 0 0 4px rgba(253, 164, 175, 0.5);
+}
+
+@media (min-width: 768px) {
+    .card {
+        padding: 3rem;
+    }
+
+    .main-title {
+        font-size: 3rem;
+    }
+}
